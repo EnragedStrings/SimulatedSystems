@@ -1,0 +1,176 @@
+[
+    {
+        "comms":{
+            "A":"120.800",
+            "B":"124.850",
+            "C":"124.850"
+        },
+        "fuels":{
+            "F1":1600,
+            "F1I":600,
+            "F2L":450,
+            "F2R":450,
+            "F3L":650,
+            "F3R":650,
+            "F4L":400,
+            "F4R":300,
+            "F5L":250,
+            "F5R":350,
+            "LW":150,
+            "RW":150
+        },
+        "engine":{
+            "THRUST":86,
+            "EGT":992,
+            "NOZZLE":67,
+            "N1RPM":83.5,
+            "N2RPM":93.5,
+            "OIL":75.1,
+            "FF":13811,
+            "HYDA":2840,
+            "HYDB":2840
+        },
+        "gear":{
+            "NLG_UPLOCK":true,
+            "NLG_DOWNLOCK":false,
+
+            "LMLG_UPLOCK":true,
+            "LMLG_DOWNLOCK":false,
+
+            "RMLG_UPLOCK":true,
+            "RMLG_DOWNLOCK":false
+        },
+        "FCS":{
+            "L_LEF":0,
+            "R_LEF":0,
+            "L_AILERON":-10,
+            "R_AILERON":-10,
+            "L_STAB":0,
+            "R_STAB":0,
+            "L_RUDDER":-15,
+            "R_RUDDER":-15,
+            "HOTAS":{
+                "PITCH":0,
+                "YAW":0,
+                "ROLL":0,
+                "THROTTLE":0
+            },
+            "TRIM":{
+                "PITCH":0,
+                "YAW":0,
+                "ROLL":0
+            }
+        },
+        "Position":{
+            "EOTS":{
+                "YAW":174,
+                "PITCH":-10,
+                "FOV":60
+            },
+            "DAS":{
+                "CAMERA":"DAS 1"
+            }
+        },
+        "Aircraft":{
+            "modelPath": "models/aircraft.bam",
+            "scale": 0.5,
+            "Position": [-100, -1000, 1000],
+            "Rotation": [-90, -10, 0]
+        },
+        "Rendering":{
+            "fogLightness":0.11,
+            "fogDistance":100000,
+            "renderDistance":100000,
+            "fogDensity":0.0000,
+            "skydomeScale":10,
+            "whiteHot":true,
+
+            "fogColor": [0.3, 0.3, 0.3],
+            "ambientColor": [0.2, 0.2, 0.2],
+            "sunDirection": [1, -1, -2],
+            "sunColor": [1.0, 0.9, 0.8],
+            "clearColor": [0.1, 0.1, 0.1, 1]
+        },
+        "Cameras": [
+            {
+            "id": "EOTS",
+            "offset": [2.5, -0.24, -0.2],
+            "hpr": [-90, -10, 0],
+            "skyboxModel": "models/skydome_IR.bam",
+            "fov": 80
+            },
+            {
+            "id": "DAS 1",
+            "offset": [2, -0.25, 2.5],
+            "hpr": [-90, 0, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            },
+            {
+            "id": "DAS 2",
+            "offset": [-5.5, -0.25, -0.4],
+            "hpr": [-90, -20, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            },
+            {
+            "id": "DAS 3",
+            "offset": [2, 0.75, 1],
+            "hpr": [0, 0, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            },
+            {
+            "id": "DAS 4",
+            "offset": [2, -1.5, 1],
+            "hpr": [180, 0, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            },
+            {
+            "id": "DAS 5",
+            "offset": [-9, -0.25, -0.4],
+            "hpr": [90, -20, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            },
+            {
+            "id": "DAS 6",
+            "offset": [-5.7, -0.25, 3.5],
+            "hpr": [90, 0, 0],
+            "skyboxModel": "models/skydome.bam",
+            "fov": 60
+            }
+        ],
+        "PHM":{
+            "VEHICLE":{
+                "CAS":1,
+                "ENGINE":1,
+                "EPS":1,
+                "FCS":1,
+                "FUEL":1,
+                "GEAR":1,
+                "HYD":1,
+                "LIFT_SYS":-1,
+                "PTMS":1,
+                "VSP":1
+            },
+            "MISSION":{
+                "CM":-1,
+                "CNI":1,
+                "DAS":-1,
+                "EOTS":-1,
+                "EW":1,
+                "GPS":1,
+                "GUN":0,
+                "ICP":1,
+                "PVI":1,
+                "RADAR":-1,
+                "SMS":0
+            }
+        },
+        "MISC":{
+            "DEVMODE" : false
+        }
+    }
+]
